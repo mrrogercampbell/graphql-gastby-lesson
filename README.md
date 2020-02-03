@@ -212,6 +212,13 @@ mutation {
 
 We are also requesting a `payload` from this `mutation` which demonstrates another powerful feature of GraphQL. Not only are we able to create a new character record for `Starbuck` but we are also able to query for her newly create ID all in one request. WOW!
 
+## GraphiQL
+`GraphiQL` is a GUI for editing and testing GraphQL queries and mutations.
+
+All `GraphQL` APIs will have a `/graphql` endpoint. This is where you access the API. Most developer will install `GraphiQL` as a package for their API which will allow you to interface with it from the web.
+
+Lets walk through the [Pokemon Demo GraphQL API](https://graphql-pokemon.now.sh/?query=%7B%0A%20%20pokemon(name%3A%20%22charmander%22)%20%7B%0A%20%20%20%20id%0A%20%20%20%20number%0A%20%20%20%20name%0A%20%20%20%20attacks%20%7B%0A%20%20%20%20%20%20special%20%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%20%20damage%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20evolutions%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20number%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20weight%20%7B%0A%20%20%20%20%20%20%20%20minimum%0A%20%20%20%20%20%20%20%20maximum%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20attacks%20%7B%0A%20%20%20%20%20%20%20%20fast%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%20%20%20%20damage%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D).
+
 ## You Do
 Pick a GraphQL Public API from this [List of Public GraphQL APIs](https://github.com/APIs-guru/graphql-apis) and spend 10 mins querying its endpoint. 
 
