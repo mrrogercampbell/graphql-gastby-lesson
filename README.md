@@ -193,9 +193,6 @@ Here is the expected returned `payload`
 }
 ```
 
-
-
-
 ## What Mutants? Yup, You Can Even Write Mutations
 So unfortunately `mutations` will not allow you to become the next Witcher of GA. But they will allow you to put the C, U, and D in `CRUD`.
 
@@ -215,6 +212,8 @@ mutation {
 
 We are also requesting a `payload` from this `mutation` which demonstrates another powerful feature of GraphQL. Not only are we able to create a new character record for `Starbuck` but we are also able to query for her newly create ID all in one request. WOW!
 
+## You Do
+Pick a GraphQL Public API from this [List of Public GraphQL APIs](https://github.com/APIs-guru/graphql-apis) and spend 10 mins querying its endpoint. 
 
 ## GraphQL in Gatsby
 Start by cloning down this [repo](https://github.com/rc1336/first-gatsby-graphql-repo/tree/master) and navigate into the repo.
@@ -353,3 +352,10 @@ Once you have viewed the changes in real time, lets go back and update the `site
     title: `Sci-Fi is Awesome!`,
   },
 ```
+
+
+## Resources
+[Intro To GraphQL](https://graphql.org/learn/)
+[List of Public GraphQL APIs](https://github.com/APIs-guru/graphql-apis)
+[GraphQL Tutorial by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
+[Data in Gatsby](https://www.gatsbyjs.org/tutorial/part-four/)
