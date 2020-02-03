@@ -20,14 +20,14 @@ REST APIs data is accessed from specific endpoints and said data is returned in 
 Where as with GraphQL you able to access all data via one endpoint. All the client has to do is send a query requesting specific data from the single endpoint.
 
 Take a look at this example:
-```SQL
-Characters
+
+**Characters Table:**
 | id  |    name     |      universe |
 | --- | :---------: | ------------: |
 | 1   | Mace Windu  |     Star Wars |
 | 2   |   Teal'c    | Stargate SG-1 |
 | 3   | Tyr Anasazi |     Andromeda |
-```
+
 
 
 To query for all the character's name you would do:
@@ -102,23 +102,23 @@ Lets say we also wanted to request the `universe` that the characters are from a
 
 ## Nesting Query Data
 As we discussed before the power of GraphQL is not just in how simple it is to write a query, the power is in its flexibility. One great feature of GraphQL is `querying nested data`. Lets take our above example and add a second model, say we have a `Characters` and a `Weapons` model.
-```SQL
-Characters
+
+**Characters Table:**
 | id  |    name     |      universe |
 | --- | :---------: | ------------: |
 | 1   | Mace Windu  |     Star Wars |
 | 2   |   Teal'c    | Stargate SG-1 |
 | 3   | Tyr Anasazi |     Andromeda |
-```
 
-```SQL
-Weapons
+
+
+**Weapons Table:**
 | id  | character_id |         type |
 | --- | :----------: | -----------: |
 | 1   |      1       |  Light Saber |
 | 2   |      2       | Ma'Tok Staff |
 | 3   |      3       |    Gauss Gun |
-```
+
 
 Let say we want a `payload` that contains each Character's name and their Weapon of choice. How would we structure the request?
 
