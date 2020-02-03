@@ -367,3 +367,4 @@ Once you have viewed the changes in real time, lets go back and update the `site
 - [List of Public GraphQL APIs](https://github.com/APIs-guru/graphql-apis)
 - [GraphQL Tutorial by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
 - [Data in Gatsby](https://www.gatsbyjs.org/tutorial/part-four/)
+- [GraphiQL Docs](https://www.electronjs.org/apps/graphiql)
