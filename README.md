@@ -23,6 +23,7 @@ Where as with GraphQL you able to access all data via one endpoint. All the clie
 Take a look at this example:
 
 **Characters Table:**
+
 | id  |    name     |      universe |
 | --- | :---------: | ------------: |
 | 1   | Mace Windu  |     Star Wars |
