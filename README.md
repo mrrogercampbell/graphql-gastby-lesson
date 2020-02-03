@@ -355,7 +355,7 @@ Once you have viewed the changes in real time, lets go back and update the `site
 
 
 ## Resources
-[Intro To GraphQL](https://graphql.org/learn/)
-[List of Public GraphQL APIs](https://github.com/APIs-guru/graphql-apis)
-[GraphQL Tutorial by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
-[Data in Gatsby](https://www.gatsbyjs.org/tutorial/part-four/)
+- [Intro To GraphQL](https://graphql.org/learn/)
+- [List of Public GraphQL APIs](https://github.com/APIs-guru/graphql-apis)
+- [GraphQL Tutorial by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
+- [Data in Gatsby](https://www.gatsbyjs.org/tutorial/part-four/)
