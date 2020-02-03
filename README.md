@@ -2,9 +2,10 @@
 
 ## Learning Objectives:
 By the end of this lesson developers should be able to:
+- Explain what GraphQL and it.
 - Perform basic queries with GraphQL.
-- Explain what GraphQL and it uses within the context of Gatsby.
-- Render GraphQL queried data inside of Gatsby components.
+- Explain what GrapiQL is and how to interface with it.
+- Perform Page and Static Queries inside of Gatsby components.
 
 ## What is GraphQL
 GraphQL is a new API standard that was developed and open-sourced by Facebook with the intent to be a more efficient, powerful and flexible alternative to REST.
