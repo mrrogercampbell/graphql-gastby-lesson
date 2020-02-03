@@ -217,7 +217,7 @@ We are also requesting a `payload` from this `mutation` which demonstrates anoth
 
 
 ## GraphQL in Gatsby
-Start by cloning down this [repo](LinkGoesHere) and navigate into the repo.
+Start by cloning down this [repo](https://github.com/rc1336/first-gatsby-graphql-repo/tree/master) and navigate into the repo.
 
 Then install these packages:
 ```npm i```
