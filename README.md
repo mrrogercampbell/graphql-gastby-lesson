@@ -1,10 +1,8 @@
 # GraphQL & Gatsby
-Short blurb here about the two
-
 
 ## Learning Objectives:
 By the end of this lesson developers should be able to:
-- Perform queries with GraphQL.
+- Perform basic queries with GraphQL.
 - Explain what GraphQL and it uses within the context of Gatsby.
 - Render GraphQL queried data inside of Gatsby components.
 
@@ -66,9 +64,11 @@ Your response would look like this:
 ```
 
 Breaking down the response:
-You can see in the response above that only the character's `name` was returned. Lets say we also wanted to request the `universe` that the characters are from and their name. How would we do that?
+You can see in the response above that only the character's `name` was returned.
 
-POSSIBLE YOU DO!
+
+Lets say we also wanted to request the `universe` that the characters are from and their name. How would we do that?
+
 ```
 {
   allCharacters {
@@ -199,8 +199,6 @@ So unfortunately `mutations` will not allow you to become the next Witcher of GA
 
 `Mutations` are used to make changes to data that is stored in the backend. `Mutations` are structured that same as normal queries but require you to start them with the `mutation` keyword.
 
-I DO:
-Create a new record
 Lets say you want to create a new record.
 
 ```
@@ -353,9 +351,3 @@ Once you have viewed the changes in real time, lets go back and update the `site
     title: `Sci-Fi is Awesome!`,
   },
 ```
-
-## Static Data vs GraphQL Data in Gatsby
-
-## GraphiQL
-
-## Source Plugins & Rendering Queried Data
