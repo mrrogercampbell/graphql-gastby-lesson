@@ -104,6 +104,7 @@ Lets say we also wanted to request the `universe` that the characters are from a
 As we discussed before the power of GraphQL is not just in how simple it is to write a query, the power is in its flexibility. One great feature of GraphQL is `querying nested data`. Lets take our above example and add a second model, say we have a `Characters` and a `Weapons` model.
 
 **Characters Table:**
+
 | id  |    name     |      universe |
 | --- | :---------: | ------------: |
 | 1   | Mace Windu  |     Star Wars |
@@ -113,6 +114,7 @@ As we discussed before the power of GraphQL is not just in how simple it is to w
 
 
 **Weapons Table:**
+
 | id  | character_id |         type |
 | --- | :----------: | -----------: |
 | 1   |      1       |  Light Saber |
