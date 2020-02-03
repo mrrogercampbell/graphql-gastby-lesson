@@ -20,7 +20,7 @@ REST APIs data is accessed from specific endpoints and said data is returned in 
 Where as with GraphQL you able to access all data via one endpoint. All the client has to do is send a query requesting specific data from the single endpoint.
 
 Take a look at this example:
-```
+```SQL
 Characters
 | id  |    name     |      universe |
 | --- | :---------: | ------------: |
@@ -31,7 +31,7 @@ Characters
 
 
 To query for all the character's name you would do:
-```
+```graphql
 {
   allCharacters {
     name
@@ -45,7 +45,7 @@ Lets break down this request:
 
 Your response would look like this:
 
-```
+```graphql
 {
   "data": {
     "allCharacters": [
@@ -69,7 +69,7 @@ You can see in the response above that only the character's `name` was returned.
 
 Lets say we also wanted to request the `universe` that the characters are from and their name. How would we do that?
 
-```
+```graphql
 {
   allCharacters {
     name
@@ -79,7 +79,7 @@ Lets say we also wanted to request the `universe` that the characters are from a
 ```
 
 
-```
+```json
 {
   "data": {
     "allCharacters": [
@@ -102,7 +102,7 @@ Lets say we also wanted to request the `universe` that the characters are from a
 
 ## Nesting Query Data
 As we discussed before the power of GraphQL is not just in how simple it is to write a query, the power is in its flexibility. One great feature of GraphQL is `querying nested data`. Lets take our above example and add a second model, say we have a `Characters` and a `Weapons` model.
-```
+```SQL
 Characters
 | id  |    name     |      universe |
 | --- | :---------: | ------------: |
@@ -111,7 +111,7 @@ Characters
 | 3   | Tyr Anasazi |     Andromeda |
 ```
 
-```
+```SQL
 Weapons
 | id  | character_id |         type |
 | --- | :----------: | -----------: |
@@ -122,7 +122,7 @@ Weapons
 
 Let say we want a `payload` that contains each Character's name and their Weapon of choice. How would we structure the request?
 
-```
+```graphQL
 {
   allCharacters {
     name
@@ -134,7 +134,7 @@ Let say we want a `payload` that contains each Character's name and their Weapon
 ```
 Yup, Its that simple! No need to send two separate request to different endpoints. We are able to just nest the data we want in out request and checkout how simplistic the response is:
 
-```
+```json
 {
   "data": {
     "allCharacters": [
@@ -168,7 +168,7 @@ How cool is that!? We are able to make one request to a single end point that re
 Arguments in GraphQL come from the same principles as an argument in a function. Arguments passed to a query can help you manipulate the returned `payload`.
 
 Going back to our Character example, say we want to return the character with the `id` equal to `1`.
-```
+```json
 {
   allCharacters(id: 1) {
     name
@@ -179,7 +179,7 @@ Going back to our Character example, say we want to return the character with th
 With the query above we are passing the argument of `id` to the `root field` `allCharacters`, with the value of said argument being equal to `1`.
 
 Here is the expected returned `payload`
-```
+```json
 {
   "data": {
     "allCharacters": [
@@ -201,7 +201,7 @@ So unfortunately `mutations` will not allow you to become the next Witcher of GA
 
 Lets say you want to create a new record.
 
-```
+```graphql
 mutation {
   createCharacter(name: "Kara Starbuck Thrace", universe: "Battlestar Galactica") {
       id
@@ -222,7 +222,7 @@ Then install these packages:
 
 Create a `gatsby-config.js` file in the root directory of the project.
 
-```
+```js
 gatsby-config.js
 
 module.exports = {
@@ -246,7 +246,7 @@ When the app renders you will see that the site title `Sci-Fi` is awesome is in 
 
 We can store common data such as page titles and such in the `siteMetadata` object. This object will be housed in the `gatsby-config.js` file. Let add the following to our `gatsby-config.js`:
 
-```
+```js
 module.exports = {
    siteMetadata: {
     title: `Title from siteMetadata`,
@@ -259,7 +259,7 @@ Restart your development server.
 ## Page Queries
 Now that we have added a page title our `siteMetadata` let try querying it in out `about.js` file using a `page query`:
 
-```
+```jsx
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
@@ -290,7 +290,7 @@ You will see that the title has been replaced with the title from the `siteMetad
 
 Replace the code in your `layout.js` file with the following:
 
-```
+```jsx
 import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
