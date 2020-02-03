@@ -79,7 +79,7 @@ Lets say we also wanted to request the `universe` that the characters are from a
 ```
 
 
-```json
+```graphql
 {
   "data": {
     "allCharacters": [
@@ -134,7 +134,7 @@ Let say we want a `payload` that contains each Character's name and their Weapon
 ```
 Yup, Its that simple! No need to send two separate request to different endpoints. We are able to just nest the data we want in out request and checkout how simplistic the response is:
 
-```json
+```graphql
 {
   "data": {
     "allCharacters": [
@@ -168,7 +168,7 @@ How cool is that!? We are able to make one request to a single end point that re
 Arguments in GraphQL come from the same principles as an argument in a function. Arguments passed to a query can help you manipulate the returned `payload`.
 
 Going back to our Character example, say we want to return the character with the `id` equal to `1`.
-```json
+```graphql
 {
   allCharacters(id: 1) {
     name
@@ -179,7 +179,7 @@ Going back to our Character example, say we want to return the character with th
 With the query above we are passing the argument of `id` to the `root field` `allCharacters`, with the value of said argument being equal to `1`.
 
 Here is the expected returned `payload`
-```json
+```graphql
 {
   "data": {
     "allCharacters": [
